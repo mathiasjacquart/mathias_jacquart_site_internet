@@ -148,7 +148,7 @@ let typewriter = new Typewriter(titreIntro, {
 });
 
 typewriter.typeString('Hello !')
-    .pauseFor(1000)
+    .pauseFor(3000)
     .deleteAll()
     .typeString('Moi, c\'est Mathias,')
     .pauseFor(1000)

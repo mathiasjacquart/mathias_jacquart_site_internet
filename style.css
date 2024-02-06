@@ -261,7 +261,7 @@
 .arrow { 
   /* margin-top: 100px; */
 
-  /*BJ*/
+  
   position: absolute;
   left: 50%;
   transform-origin: center;
@@ -329,7 +329,7 @@
   text-align: center;
   background-color: #745d5d;
   border-radius: 30px;
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: center;
   padding: 15px 10px;
@@ -342,7 +342,7 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   background-color:#745d5d; 
   color: white;
   border-radius: 30px;
-  text-align: center;
+  text-align: left;
   font-size: 1em; 
   padding: 20px 30px 20px 30px ;
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
@@ -464,7 +464,20 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   background-color: #9b8080;
   border-radius: 0.375em;
 }
-
+.btn-cv { 
+  margin: 25px 0px;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-color:rgb(116, 93, 93);
+  border-color: rgb(116, 93, 93) ;
+  font-size: 1.5em !important;
+  padding: 10px 50px;
+  -webkit-box-shadow: inset -1px 3px 8px 5px rgba(116, 93, 93,.50), 2px 5px 16px 0px #716060, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: inset -1px 3px 8px 5px rgba(116, 93, 93,.50), 2px 5px 16px 0px #716060, 5px 5px 15px 5px rgba(0,0,0,0);
+}
 @media (max-width:576px) { 
   .progress-bar-responsive{ 
     display:flex;
@@ -507,9 +520,6 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   
 }
 
-.cards { 
- 
-}
 .card-body .card-title { 
   color: rgb(116, 93, 93) ;
   font-family: 'Montserrat', sans-serif;
@@ -530,6 +540,8 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   background-color:#745d5d;
   border-color: #745d5d ;
   margin-top: 20px;
+    -webkit-box-shadow: inset -1px 3px 8px 5px rgba(116, 93, 93,.50), 2px 5px 16px 0px #716060, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: inset -1px 3px 8px 5px rgba(116, 93, 93,.50), 2px 5px 16px 0px #716060, 5px 5px 15px 5px rgba(0,0,0,0);
  }
 
  .card-body .btn-primary:hover { 
@@ -679,10 +691,6 @@ transition-delay: 0.5s;
   
 }
 
-form .btn-primary { 
-  background-color: #745d5d;
-  border-color: #745d5d;
-}
 form .form-control:focus { 
   border-color:#745d5d;
   box-shadow: 0 0 0 0.25rem rgba(116, 93, 93,.50) !important;
@@ -696,6 +704,8 @@ form .btn-primary {
   font-size: 1.5em !important;
   font-weight: 600;
   padding: 10px 50px;
+  -webkit-box-shadow: inset -1px 3px 8px 5px rgba(116, 93, 93,.50), 2px 5px 16px 0px #716060, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: inset -1px 3px 8px 5px rgba(116, 93, 93,.50), 2px 5px 16px 0px #716060, 5px 5px 15px 5px rgba(0,0,0,0);
  }
 
 
@@ -754,10 +764,6 @@ form .btn-primary:active {
   background-color:rgb(255, 255, 255, 0.50);
   width: 100%;
   padding: 10px 0px;
-}
-
-.footer-left { 
-
 }
 
 .footer-mid { 

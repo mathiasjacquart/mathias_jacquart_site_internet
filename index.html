@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Je suis Mathias JACQUART, Développeur Web Junior sur Lille. Je débute dans le monde du web et du développement web. J'ai réalisé ce site portfolio pour vous présenter mes compéteences et mes travaux dans le but de trouver une alternance.">
+    <meta name="author" content="Mathias JACQUART">
+    <meta name="keywords" content="mathias jacquart, Mathias JACQUART, portfolio, Portfolio développeur web, Mathias Jacquart portfolio, mathias jacquart développeur web, mathias jacquart lille, développeur web lille, portfolio développeur web junior, développeur web portfolio, mathias jacquart développeur lille, Lille" >
     <title>Mathias JACQUART </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo-mathias-70.png" type="image/png">
     <!-- Font-Family  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +18,6 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
-    
-   
 
 </head>
 
@@ -105,7 +105,7 @@
                   <p> J'aime apprendre, écouter, partager et surtout <span>CODER</span>.</p>
                 </div>
                 <div class="bio">
-                  <p> Passionné de technologies et de développement web, je me suis reconverti pour <span>concilier mon centre d'intérêt et ma carrière</span> pour donner vie à mon projet profesionnel.</p>
+                  <p> Passionné de technologies et de développement web, je me suis reconverti pour <span>concilier mon centre d'intérêt et ma carrière</span> pour donner vie à mon projet professionnel.</p>
                 </div>  
               </div>
               <div class="col-md-6 col-12 offset-md-1 offset-0 order-md-2 order-1">
@@ -320,6 +320,9 @@
             </div>
           </div>
         </div>
+        <div class="row align-items-center justify-content-center">
+            <a class="btn btn-primary btn-cv " target="_blank" href="fichier/CV_Mathias_Jacquart.pdf">Télécharger mon CV</a>
+        </div>
       </div>
     </section>
 <!-- Portfolio  -->
@@ -516,23 +519,23 @@
     <h2 class="mb-0">Intéressé par mon profil ?</h2>
     <h3 class="fw-light fs-5">Contactez-moi ! </h3>
       <div class="row d-flex justify-content-center">
-        <form action="" class="row"> 
+        <form action="send_form.php" method="post" class="row"> 
           <div class="col-md-5 col-12 mb-3">
             <label for="InputFirstName" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="InputFirstName" aria-describedby="FirstName">
+            <input type="text" class="form-control" id="InputFirstName" aria-describedby="FirstName" name="prenom" required>
           </div>
           <div class="col-md-5 col-12 offset-md-2 mb-3">
             <label for="InputSurname" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="InputSurname" aria-describedby="Surname">
+            <input type="text" class="form-control" id="InputSurname" aria-describedby="Surname" name="nom" required>
 
           </div>
           <div class="mb-3 w-100">
             <label for="InputEmail" class="form-label">E-mail </label>
-            <input type="email" class="form-control" id="InputEmail">
+            <input type="email" class="form-control" id="InputEmail" name="email" required>
           </div>
           <div class="mb-3 w-100">
            <label class="form-label" for="InputMessage">Message</label>
-            <input type="textarea" class="form-control pb-5" id="InputMessage">
+            <input type="textarea" class="form-control pb-5" id="InputMessage" name="message" required>
             
           </div>
           <div class="send"><button type="submit" class="btn btn-primary">Envoyer</button></div>
