@@ -4,8 +4,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nom = $_POST['nom'];
     $email = $_POST['email'];
     $message = $_POST['message'];
+    $headers = "From:contact@mathias.jacquart.com\r\n";
+    $headers .= "Reply-To: ".$email."\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion(); // En-tête personnalisé pour indiquer la version de PHP utilisée pour l'envoi
 
-    $destinataire = 'math.jacquart@gmail.com'; // Adresse email où vous souhaitez recevoir les informations
+
+    $destinataire = 'math.jacquart@gmail.com'; 
     $sujet = 'Nouveau message depuis votre formulaire de contact';
 
     $contenu = "Prénom : $prenom\n";
@@ -13,11 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contenu .= "Email : $email\n";
     $contenu .= "Message :\n$message";
 
-    // Envoi de l'email
-    mail($destinataire, $sujet, $contenu);
-
-    // Redirection vers une page de confirmation
-    header('Location: confirmation.html');
+    
+    mail($destinataire, $sujet, $contenu, $headers);
+    echo $prenom;
     exit;
 }
+
 ?>

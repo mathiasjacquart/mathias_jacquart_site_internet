@@ -518,8 +518,8 @@
   <div class="container">
     <h2 class="mb-0">Intéressé par mon profil ?</h2>
     <h3 class="fw-light fs-5">Contactez-moi ! </h3>
-      <div class="row d-flex justify-content-center">
-        <form action="send_form.php" method="post" class="row"> 
+      <div class="row d-flex justify-content-center" id="rowForm">
+        <form method="post" class="row" id="contactForm"> 
           <div class="col-md-5 col-12 mb-3">
             <label for="InputFirstName" class="form-label">Prénom</label>
             <input type="text" class="form-control" id="InputFirstName" aria-describedby="FirstName" name="prenom" required>
@@ -609,8 +609,9 @@
 
     
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
   
     <script src="script.js"></script>
+    <script src="ajax_form.js"></script>
 </body>
 </html>

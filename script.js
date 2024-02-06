@@ -97,7 +97,6 @@ particlesJS("particles-js-footer",
 //   }
 
 
-
 //   return true
 // }
 
@@ -192,14 +191,6 @@ function callBackTypeWritter () {
 }
 
 
-
-// const titleAnim2 = document.getElementById('title-p2')
-// const anim2 = new Typewriter (titleAnim2, { 
-
-// })
-// .typeString('Passionné par les technologies et le développement front-end, je serai ravi de collaborer avec vous sur de nouveaux projets ! ')
-// .start()
-
 // NAV SCROLLING BACKGROUNDCHANGE
 
 // window.addEventListener('scroll', () => {
@@ -222,17 +213,6 @@ function callBackTypeWritter () {
 
 // DISPLAY BLOG 
 
-// function AfficherBlog() {
-//   const hiddenElements = document.querySelectorAll('[class*="hidden-content-"]')
-//   console.log(hiddenElements)
-//   if (hiddenElements.length > 0) { 
-//     for (let hiddenEl of hiddenElements){ 
-//       hiddenEl.classList.add('display-content')
-//       console.log(hiddenEl)
-//       hiddenEl.style.opacity = "1"
-//     }
-//   }
-
 
 function AfficherBlog() {
  const hidden = document.querySelector(".hidden-content") 
@@ -249,3 +229,14 @@ console.log(hiddenElements)
     }
   } 
 }
+
+
+//RESPONSE FORM 
+
+let response = document.createElement('div');
+response.classList.add('response')
+console.log(response)
+let responseParent = document.getElementById('rowForm');
+responseParent.appendChild(response)
+
+

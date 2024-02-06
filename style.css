@@ -600,7 +600,7 @@ box-shadow: 0px 10px 13px -7px #000000, -20px -19px 0px -30px rgba(0,0,0,0);
 .block-blog p { 
   color: #e9ecef;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin-left: 30px;
 }
 
@@ -713,6 +713,7 @@ form .btn-primary:hover {
   background-color:rgb(83, 66, 66);
   border-color: rgb(83, 66, 66) ;
  }
+ .btn:first-child:active,
 form .btn-primary:active { 
   background-color:rgb(83, 66, 66);
   border-color: rgb(83, 66, 66) ;
@@ -728,6 +729,48 @@ form .btn-primary:active {
   justify-content: center;
  }
 
+ .formHidden { 
+  display: none;
+
+ }
+
+ .response { 
+  transition-duration: 2s;
+  color: rgb(83, 66, 66);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  border: solid 2px;
+  border-radius: 20px;
+  display: none;
+  border-color: #745d5d;
+  box-shadow: 0 0 0 0.25rem rgba(116, 93, 93,.50) !important;
+ }
+
+ .response div { 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px;
+ }
+ .response div p{ 
+  
+  font-weight: 600;
+ }
+
+ .response div>p{ 
+  
+  padding-bottom: 10px;
+ }
+ 
+ .show { 
+  display: block;
+ }
  /* FOOTER  */
 
  .footer {
