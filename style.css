@@ -803,6 +803,10 @@ form .btn-primary:active {
   margin-bottom: 50px;
 }
 
+.footer-contact-1 a { 
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
 .footer-wrapper { 
   background-color:rgb(255, 255, 255, 0.50);
   width: 100%;
@@ -835,7 +839,23 @@ margin-right: 15px;
   }
 }
 
-@media (max-width:576px) {
+.headScroll { 
+  display: flex;
+  justify-content: center;
+  padding-top:25px;
+  text-decoration: none;
+}
+
+.btn-headScroll { 
+  font-family:'Montserrat', sans-serif;
+  font-size: 1.2em;
+  background-color: transparent;
+  border:  none;
+  color: #ccc;
+  font-style: italic;
+}
+
+@media (max-width:768px) {
   #particles-js-footer { 
     height:800px
   }

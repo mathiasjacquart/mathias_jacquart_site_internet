@@ -65,80 +65,6 @@ particlesJS("particles-js-footer",
 // PROGRESS BAR JS 
 
 
-// function move(allBar) {
-
-//   for (let currentBar of allBar) {
-
-//     let currentBarID = currentBar.getAttribute('id')
-//     let currentBarPourcent = currentBar.dataset.pourcentval
-    
-//     console.log('currentBarID = '+currentBarID)
-//     console.log('currentBarPourcent = '+currentBarPourcent)
-//     let i = 0;
-//     if (i == 0) {
-//       i = 1;
-//       var elem = document.getElementById(currentBarID);
-//       console.log(elem)
-//       var width = 1;
-//       var id = setInterval(frame(elem, currentBarPourcent), 10);
-      
-//       function frame(elem, currentBarPourcent) {
-//         if (width >= currentBarPourcent) {
-//           clearInterval(id);
-//           i = 0;
-//         } else {
-//           width++;
-//           elem.style.width = width + "%";
-//         }
-//       }
-
-//     }
-    
-//   }
-
-
-//   return true
-// }
-
-// const allBar = document.querySelectorAll('.progressBar')
-// const myBar = document.querySelector('.my-skill')
-
-// window.addEventListener('scroll', () => { 
-//     const {scrollTop, clientHeight} = document.documentElement 
-//     const topElementtoTopViewport = myBar.getBoundingClientRect().top;
-
-//     if (scrollTop > (scrollTop + topElementtoTopViewport).toFixed()){
-//         let result = move (allBar)
-//         console.log(result)
-//     }
-        
-
-// data-pourcentval
-
-// })
-
-
-
-// TYPE WRITTER INTRO
-
-// var i = 0;
-// const titreIntro = document.getElementById("TextTitre")
-// speed = 100
-// let text = `Hello, moi, c'est Mathias, Développeur Web Junior !`
-
-
-// function typeWriter() {
-//     if (i < text.length) {
-//         titreIntro.innerHTML += text.charAt(i);
-//         i++;
-//         setTimeout(typeWriter, speed);
-        
-//     } else {
-//         // Frappe terminé, class hiden sur le curseur (opacité =0)
-//         document.getElementById("cursor").classList.add("hidden");
-//     }
-// }
-// typeWriter()
 
 
 const titreIntro = document.getElementById('title-intro');
@@ -191,41 +117,17 @@ function callBackTypeWritter () {
 }
 
 
-// NAV SCROLLING BACKGROUNDCHANGE
-
-// window.addEventListener('scroll', () => {
-//   const Nav = document.querySelector("nav")
-//   const NavBar = document.querySelector ('.header-nav')
-//   const Element1 =  document.querySelector('.titre-intro')
-//   const {scrollTop, clientHeight} = document.documentElement 
-//   const topElementtoTopViewport = Element1.getBoundingClientRect().top;
-
-//   if (scrollTop > (scrollTop + topElementtoTopViewport).toFixed() - clientHeight *0.10) {
-//       NavBar.classList.add('scrolled');
-//       Nav.classList.add('scrolled');
-
-//   } else { 
-//     NavBar.classList.remove('scrolled');
-//   }
-  
-// })
-
-
 // DISPLAY BLOG 
 
 
 function AfficherBlog() {
  const hidden = document.querySelector(".hidden-content") 
- console.log(hidden)
 const hiddenElements = document.querySelectorAll('[class*="hidden-content-"]')
-console.log(hiddenElements)
   if (hiddenElements.length > 0) { 
     hidden.style.position = "relative"
     hidden.style.top = "0"
     for (let hiddenEl of hiddenElements){ 
       hiddenEl.style.opacity = "1"
-      // }else { 
-      // hidden.style.opacity= "0" 
     }
   } 
 }
@@ -235,8 +137,21 @@ console.log(hiddenElements)
 
 let response = document.createElement('div');
 response.classList.add('response')
-console.log(response)
 let responseParent = document.getElementById('rowForm');
 responseParent.appendChild(response)
+
+
+// ANIME HEADERSCROLL 
+
+const btnScrollTop = document.querySelector(".btn-headScroll")
+btnScrollTop.addEventListener('click', () => { 
+
+  window.scrollTo({
+    top:0,
+    left:0, 
+    behavior:"smooth"
+  })
+})
+
 
 

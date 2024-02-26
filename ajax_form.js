@@ -1,10 +1,7 @@
-console.log(response)
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
-    console.log(form)
     form.addEventListener('submit', function(event) { 
         form.classList.add('formHidden')
-        console.log("bjrtoto")
         event.preventDefault(); // Empêcher le rechargement de la page
 
         // Récupérer les données du formulaire
